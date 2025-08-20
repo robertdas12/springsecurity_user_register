@@ -9,49 +9,9 @@
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
-  <style>
-    .navbar-custom {
-      background: linear-gradient(135deg, #0d6efd, #0b5ed7);
-    }
-    .navbar-brand {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #fff !important;
-    }
-    .nav-link {
-      color: #fff !important;
-      margin-right: 1rem;
-      transition: color 0.3s ease-in-out;
-    }
-    .nav-link:hover {
-      color: #ffc107 !important;
-    }
-    .btn-custom {
-      background: #ffc107;
-      color: #000;
-      font-weight: 500;
-      border-radius: 20px;
-      padding: 0.4rem 1rem;
-      transition: all 0.3s ease-in-out;
-    }
-    .btn-custom:hover {
-      background: #e0a800;
-      transform: scale(1.05);
-    }
-    .btn-outline-custom {
-      border: 2px solid #ffc107;
-      color: #fff;
-      border-radius: 20px;
-      padding: 0.4rem 1rem;
-      margin-left: 0.5rem;
-      transition: all 0.3s ease-in-out;
-    }
-    .btn-outline-custom:hover {
-      background: #ffc107;
-      color: #000;
-      transform: scale(1.05);
-    }
-  </style>
+   
+    <!-- Custom CSS -->
+  <link rel="stylesheet" th:href="@{/css/navbar.css}">
 </head>
 <body>
 
@@ -80,7 +40,7 @@
         </ul>
 
         <!-- Auth Buttons -->
-        <a href="/signin" th:href="@{/signin}" class="btn btn-custom ms-lg-3 mt-2 mt-lg-0">Sign In</a>
+        <a href="/signin" th:href="@{/login}" class="btn btn-custom ms-lg-3 mt-2 mt-lg-0">Sign In</a>
         <a href="/register" th:href="@{/register}" class="btn btn-outline-custom mt-2 mt-lg-0">Register</a>
       </div>
     </div>
